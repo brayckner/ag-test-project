@@ -28,7 +28,7 @@ Now that we have what we need installed, lets run the app in an iPhone simulator
 - This can be done by VSCode > Toolbar at the top > Run > Start Debugging. 
 5. The application will then start and you should see the "Edit Profile Page" as the home page. 
 6. Start by clicking the profile picture.
-- Note: Due to the forward arrows in the textfields not being clickable. Please adjust the main.dart file on line 31. There are comments in the code that explain the work around. 
+- Note: Due to the forward arrows in the textfields not being clickable. Please adjust the main.dart file on line 31. There are comments in the code that explain the work around. This will allow you to see the other UI screens. 
 
 ## My Experience
 This was my first attempt ever at creating a Flutter application. While I am not perfect, I did... 
