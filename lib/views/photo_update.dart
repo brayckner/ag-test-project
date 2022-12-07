@@ -1,5 +1,6 @@
 import 'package:ag_test_project/model/user.dart';
 import 'package:ag_test_project/utils/user_information.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,10 @@ class _PhotoUpdateState extends State<PhotoUpdate> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          statusBarIconBrightness: Brightness.dark,
+          statusBarBrightness: Brightness.light,
+        ),
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.of(context).pop(),
@@ -39,9 +44,15 @@ class _PhotoUpdateState extends State<PhotoUpdate> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          const SizedBox(height: 24),
           Column(
             children: [
-              Image.network(user.imagePath),
+              Image.network(
+                user.imagePath,
+                width: 300,
+                height: 300,
+                fit: BoxFit.cover,
+              ),
             ],
           ),
           const SizedBox(height: 24),
