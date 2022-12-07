@@ -1,3 +1,4 @@
+import 'package:ag_test_project/views/name_update.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ag_test_project/views/profile_page.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         // dividerColor: Colors.black,
       ),
       title: title,
-      home: ProfilePage(),
+      home: NameUpdate(),
     );
   }
 }
