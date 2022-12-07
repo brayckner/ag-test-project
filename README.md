@@ -27,14 +27,16 @@ Now that we have what we need installed, lets run the app in an iPhone simulator
 4. Once the iPhone simulator is up and running, click 'Start Debugging' on VSCode. 
 - This can be done by VSCode > Toolbar at the top > Run > Start Debugging. 
 5. The application will then start and you should see the "Edit Profile Page" as the home page. 
+6. Start by clicking the profile picture.
+- Note: Due to the forward arrows in the textfields not being clickable. Please adjust the main.dart file on line 31. There are comments in the code that explain the work around. 
 
 ## My Experience
-This was my first attempt at creating a Flutter application. While I am not perfect, I did... 
+This was my first attempt ever at creating a Flutter application. While I am not perfect, I did... 
 
 - Learn a lot about Flutter in a short amount of time. 
 - Learn how to create layouts in Flutter 
 - Learn how Flutter applications are structured. 
 
-Items that still need to be fixed...
+Items that need to be fixed...
 - Had issues getting the froward arrow icons to be clickable inside of the TextField. 
 - Still need to figure out different ways to adjust layout, because some items are very close to the boundry. 

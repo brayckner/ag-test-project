@@ -26,10 +26,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromARGB(255, 0, 91, 166),
-        // dividerColor: Colors.black,
       ),
       title: title,
       home: ProfilePage(),
+
+// Switch the ^^ 'home:' above with the methods below and hot reload to see other screens
+      // PhoneUpdate()
+      // NameUpdate()
+      // EmailUpdate()
+      // BioUpdate()
     );
   }
 }
