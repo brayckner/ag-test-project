@@ -32,7 +32,7 @@ class _NameUpdateState extends State<NameUpdate> {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 25,
-                color: Colors.blue,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -46,7 +46,10 @@ class _NameUpdateState extends State<NameUpdate> {
             Center(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(8), backgroundColor: Colors.black),
+                  padding: EdgeInsets.all(8),
+                  backgroundColor: Colors.black,
+                  minimumSize: const Size.fromHeight(50),
+                ),
                 child: const Text('Update'),
                 onPressed: () {},
               ),
