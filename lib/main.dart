@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         // dividerColor: Colors.black,
       ),
       title: title,
-      home: ProfilePage(),
+      home: PhotoUpdate(),
     );
   }
 }

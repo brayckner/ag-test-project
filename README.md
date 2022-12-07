@@ -14,7 +14,8 @@ Follow the instructions below to run a simple Flutter application on an IOS iPho
 6. Visit this repo: 
 - https://github.com/brayckner/ag-test-project.git
 7. Click the green "Code" button, and copy the https link. 
-8. Open the terminal and 'cd' into the directory made on step 5, then type: 'git clone https://github.com/brayckner/ag-test-project.git'
+8. Open the terminal and 'cd' into the directory made on step 5, then type: 
+- 'git clone https://github.com/brayckner/ag-test-project.git'
 9. Press Enter to create your local clone. 
 
 ## Running the app

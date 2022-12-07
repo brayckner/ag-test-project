@@ -21,7 +21,10 @@ class _BioUpdateState extends State<BioUpdate> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: const BackButton(),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: ListView(
         physics: const BouncingScrollPhysics(),

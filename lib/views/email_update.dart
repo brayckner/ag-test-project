@@ -21,7 +21,10 @@ class _EmailUpdateState extends State<EmailUpdate> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          leading: BackButton(),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back, color: Colors.black),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         ),
         body: ListView(
           physics: BouncingScrollPhysics(),
