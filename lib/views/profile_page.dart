@@ -24,66 +24,67 @@ class _ProfilePageState extends State<ProfilePage> {
     const user = UserInformation.myUser;
 
     return Scaffold(
-        appBar: buildAppBar(context),
-        body: ListView(
-          physics: BouncingScrollPhysics(),
-          children: [
-            const Text(
-              'Edit Profile',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 25,
-                color: Colors.blue,
-                fontWeight: FontWeight.bold,
-              ),
+      appBar: buildAppBar(context),
+      body: ListView(
+        physics: BouncingScrollPhysics(),
+        children: [
+          const Text(
+            'Edit Profile',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 25,
+              color: Color.fromARGB(255, 1, 99, 180),
+              fontWeight: FontWeight.bold,
             ),
-            const SizedBox(height: 20),
-            ProfileWidget(
-              imagePath: user.imagePath,
-              onClicked: () {
+          ),
+          const SizedBox(height: 20),
+          ProfileWidget(
+            imagePath: user.imagePath,
+            onClicked: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => PhotoUpdate()),
+              );
+            },
+          ),
+          const SizedBox(height: 24),
+          TextFieldWidget(
+              label: 'Name',
+              text: user.name,
+              onChanged: (name) {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => PhotoUpdate()),
+                  MaterialPageRoute(builder: (context) => NameUpdate()),
                 );
-              },
-            ),
-            const SizedBox(height: 24),
-            TextFieldWidget(
-                label: 'Name',
-                text: user.name,
-                onClicked: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => NameUpdate()),
-                  );
-                }),
-            const SizedBox(height: 24),
-            TextFieldWidget(
-                label: 'Phone',
-                text: user.phone,
-                onClicked: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => PhoneUpdate()),
-                  );
-                }),
-            const SizedBox(height: 24),
-            TextFieldWidget(
-                label: 'Email',
-                text: user.email,
-                onClicked: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => EmailUpdate()),
-                  );
-                }),
-            const SizedBox(height: 24),
-            TextFieldWidget(
-                label: 'Tell us about yourself',
-                text: user.bio,
-                maxLines: 5,
-                onClicked: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => BioUpdate()),
-                  );
-                }),
-          ],
-        ));
+              }),
+          const SizedBox(height: 24),
+          TextFieldWidget(
+              label: 'Phone',
+              text: user.phone,
+              onChanged: (phone) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => PhoneUpdate()),
+                );
+              }),
+          const SizedBox(height: 24),
+          TextFieldWidget(
+              label: 'Email',
+              text: user.email,
+              onChanged: (email) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => EmailUpdate()),
+                );
+              }),
+          const SizedBox(height: 24),
+          TextFieldWidget(
+              label: 'Tell us about yourself',
+              text: user.bio,
+              maxLines: 5,
+              onChanged: (bio) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => BioUpdate()),
+                );
+              }),
+        ],
+      ),
+    );
   }
 }

@@ -34,3 +34,7 @@ This was my first attempt at creating a Flutter application. While I am not perf
 - Learn a lot about Flutter in a short amount of time. 
 - Learn how to create layouts in Flutter 
 - Learn how Flutter applications are structured. 
+
+Items that still need to be fixed...
+- Had issues getting the froward arrow icons to be clickable inside of the TextField. 
+- Still need to figure out different ways to adjust layout, because some items are very close to the boundry. 

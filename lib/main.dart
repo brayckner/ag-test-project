@@ -23,13 +23,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color.fromARGB(255, 0, 91, 166),
         // dividerColor: Colors.black,
       ),
       title: title,
-      home: PhotoUpdate(),
+      home: ProfilePage(),
     );
   }
 }
